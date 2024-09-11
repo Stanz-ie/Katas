@@ -1,15 +1,18 @@
-let strTest = 'apple'
+let strTest = 'The quick brown fox jumps over the lazy dog.'
 const reverseWords = (str) => {
    let arr = str.split('');
- //console.log(arr);
+   let newArr = [];
 
  for(let i = arr.length -1; i >= 0; i --) {
-    let newArr = [];
     newArr.push(arr[i]);
     //console.log(newArr);
-    //console.log(newArr.toString());   
+    console.log(newArr.join());   
  }
- return newArr.toString() 
+ let lastArr = newArr.split(' ');
+ console.log(lastArr);
+ //return `"${newArr.join('')}"`;
+
+
 }
 
 console.log(reverseWords(strTest));
