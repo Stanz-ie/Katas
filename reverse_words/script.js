@@ -6,12 +6,11 @@ const reverseWords = (str) => {
  for(let i = arr.length -1; i >= 0; i --) {
     newArr.push(arr[i]);
     //console.log(newArr);
-    console.log(newArr.join());   
+    newArr.join();   
  }
  let lastArr = newArr.split(' ');
- console.log(lastArr);
+lastArr.pop()
  //return `"${newArr.join('')}"`;
-
 
 }
 
